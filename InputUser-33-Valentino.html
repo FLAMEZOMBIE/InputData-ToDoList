@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script lang="javascript" src="input.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Vaksin Burung Dadali</title>
+</head>
+
+<body>
+    <h1>XI RPL 3/33</h1>
+    <h3>Pendaftaran Vaksin Burung Dadali</h3>
+    <table>
+        <tr>
+            <td>Nama Lengkap</td>
+            <td>:</td>
+            <td>
+                <input type="text" id="nama">
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>:</td>
+            <td>
+                <input type="text" id="email">
+            </td>
+        </tr>
+        <tr>
+            <td>Negara</td>
+            <td>:</td>
+            <td>
+                <input type="text" list="Country" id="Negara">
+                <datalist id="Country">
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Malaysia">China</option>
+                    <option value="Singapore">Amerika</option>
+                    <option value="Jepang">Jepang</option>
+                    <option value="Korea">Korea</option>
+                </datalist>
+            </td>
+        </tr>
+        <tr>
+            <td>Tahun Lahir</td>
+            <td>:</td>
+            <td>
+                <input type="text" list="Tahun" id="tahun">
+                <datalist id="Tahun">
+                    <option>2000</option>
+                    <option>2002</option>
+                    <option>2003</option>
+                    <option>2004</option>
+                </datalist>
+            </td>
+        </tr>
+        <tr>
+            <td style="vertical-align: top;">Jenis Kelamin</td>
+            <td style="vertical-align: top;">:</td>
+            <td rowspan="3">
+                <input type="radio" name="jeniskelamin" value="Pria"> Pria <br>
+                <input type="radio" name="jeniskelamin" value="Wanita"> Wanita <br>
+                <input type="radio" name="jeniskelamin" value="Tak Terdefinisi"> Waria
+            </td>
+        </tr>
+    </table>
+
+    <br>
+    <button onclick="getdata()" id="show">Daftar</button>
+    <br>
+    <br>
+    <h4 id="pvn"></h4>
+    <h4 id="pve"></h4>
+    <h4 id="pvne"></h4>
+    <h4 id="pvta"></h4>
+    <h4 id="pvjk"></h4>
+
+    <table id="tabel" hidden>
+
+        <tr>
+            <td>Nama Lengkap</td>
+            <td>:</td>
+            <td id="pnama"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>:</td>
+            <td id="pemail"></td>
+        </tr>
+        <tr>
+            <td>Negara</td>
+            <td>:</td>
+            <td id="pnegara">
+
+            </td>
+        </tr>
+        <tr>
+            <td>Umur</td>
+            <td>:</td>
+            <td id="ptahun"> </td>
+        </tr>
+        <tr>
+            <td>Jenis Kelamin</td>
+            <td>:</td>
+            <td id="pJK"></td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
